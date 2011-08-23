@@ -33,7 +33,7 @@ typedef struct {
 
 extern const config_t *config;
 
-void _rcinit ();
+void rcinit ();
 int read_config ();
 int write_config ();
 

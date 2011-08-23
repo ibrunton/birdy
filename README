@@ -1,2 +1,27 @@
 birdy - a Twitter client written in C and GTK, for both command line and
 	graphical interfaces
+
+===============================================================================
+Project Outline
+
+birdy
+	* a GTK twitter client
+	* full-featured but not over-featured or bloated
+	* abstracted enough to allow for future expansion to multiple
+		protocols such as identi.ca
+
+Features:
+	* simple, elegant native-style interface
+	* implements: tweeting, timeline, filters (RT, replies, mentions)
+		user pics
+	* shows full tweet, not cut off
+	* tooltip over shortened url shows full url
+	* concurrent command-line interface for sending tweets
+		(while GUI client is running, or not)
+
+Files:
+	main.c
+	options.c options.h	/* for parsing command-line options */
+	config.c config.h	/* for reading config file */
+	window.c window.h	/* for creating graphical interface */
+	twitter.c twitter.h	/* for interaction with API */

@@ -23,7 +23,7 @@ const config_t *config = (const config_t*) &config;
 
 char *rcfile;
 
-void _rcinit ()
+void rcinit ()
 {
 	char *xdgdir = getenv ("XDG_CONFIG_HOME");
 	char *filebase = "/birdyrc\0";
