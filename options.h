@@ -13,4 +13,8 @@
 #ifndef OPTIONS_H
 #define OPTIONS_H
 
+void print_usage ();
+void print_version ();
+void parse_options (int, char**);
+
 #endif /* OPTIONS_H */

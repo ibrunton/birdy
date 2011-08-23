@@ -7,6 +7,7 @@ Project Outline
 birdy
 	* a GTK twitter client
 	* full-featured but not over-featured or bloated
+	* as few dependencies as possible
 	* abstracted enough to allow for future expansion to multiple
 		protocols such as identi.ca
 
@@ -25,3 +26,7 @@ Files:
 	config.c config.h	/* for reading config file */
 	window.c window.h	/* for creating graphical interface */
 	twitter.c twitter.h	/* for interaction with API */
+
+Dependencies:
+	libcurl
+	gtk
