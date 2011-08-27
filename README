@@ -21,11 +21,12 @@ Features:
 		(while GUI client is running, or not)
 
 Files:
-	main.c
+	birdy.c			/* contains main () */
 	options.c options.h	/* for parsing command-line options */
 	config.c config.h	/* for reading config file */
 	window.c window.h	/* for creating graphical interface */
 	twitter.c twitter.h	/* for interaction with API */
+	types.h			/* global typedefs */
 
 Dependencies:
 	libcurl

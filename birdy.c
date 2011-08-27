@@ -18,13 +18,25 @@
 #include "config.h"
 #include "options.h"
 #include "twitter.h"
+#include "types.h"
 #include "window.h"
+
 
 int
 main (int argc, char *argv[])
 {
+	if (argc > 1)
+		parse_options (argc, argv);
+
 	rcinit ();
-	parse_options (argc, argv);
+	int rc = read_config ();
+
+	/* create GUI */
+	if (mode == MODE_GUI) {
+		draw_main_window ();
+	}
+	else
+		draw_main_window ();
 
 	return EXIT_SUCCESS;
 }                                               /* end of main */

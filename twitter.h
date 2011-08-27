@@ -14,4 +14,6 @@
 #ifndef TWITTER_H
 #define TWITTER_H
 
+extern char tweet [141];
+
 #endif /* TWITTER_H */

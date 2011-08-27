@@ -21,6 +21,8 @@ typedef struct {
 	int saveLogin;
 	int autoLogin;
 
+	int defaultGUI;
+
 	int windowHeight;
 	int windowWidth;
 	int windowXpos;
@@ -29,6 +31,12 @@ typedef struct {
 
 	int showClients;
 	int showUserPics;
+	int displayPicsLocally;
+
+	char bgColour1 [8];
+	char fgColour1 [8];
+	char bgColour2 [8];
+	char fgColour2 [8];
 } config_t;
 
 extern const config_t *config;
