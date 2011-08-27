@@ -108,7 +108,7 @@ int read_config ()
 				_config.defaultGUI = strtol (field_value, NULL, 10);
 				if (_config.defaultGUI == 1)
 					_mode = MODE_GUI;
-				else
+				else if (_config.defaultGUI == 0)
 					_mode = MODE_CLI;
 			}
 

@@ -1,0 +1,21 @@
+# Default configuration file for birdy twitter client.
+# Copy this file to ~/.config/birdyrc and customise it.
+
+# store username and password:
+saveLogin=1
+# login on application start:
+autoLogin=1
+
+# store application width, height, and screen position:
+saveGeometry=0
+
+# Display information about clients used to post tweets
+# in your timeline:
+showClients=1
+
+# Display user pics/avatars:
+showUserPics=1
+
+# Open twitpics in local (default) application
+# (0 = open in browser):
+displayPicsLocally=0

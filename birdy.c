@@ -25,6 +25,10 @@
 int
 main (int argc, char *argv[])
 {
+	size_t tweet_len, n;
+
+	mode = MODE_GUI;
+
 	if (argc > 1)
 		parse_options (argc, argv);
 
@@ -36,7 +40,11 @@ main (int argc, char *argv[])
 		draw_main_window ();
 	}
 	else
-		draw_main_window ();
+		printf ("mode != gui\n");
+	if (options->from_stdin == 1) {
+		tweet_len = getline (&options->tweet_text, &n, stdin);
+		printf ("You tweeted: \"%s\" (%d)\n", options->tweet_text, tweet_len);
+	}
 
 	return EXIT_SUCCESS;
 }                                               /* end of main */
